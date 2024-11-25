@@ -16,7 +16,7 @@ export const RouterMain = () => {
             )
         },
         {
-            path: '/home',
+            path: '/acap.front/home',
             element: (
                 <MainPage>
                     <HomePage />
