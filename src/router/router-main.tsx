@@ -8,6 +8,7 @@ export const RouterMain = () => {
 
     const router = createBrowserRouter([
         {
+            
             path: '/',
             element: (
                 <MainPage>
@@ -16,7 +17,7 @@ export const RouterMain = () => {
             )
         },
         {
-            path: '/acap.front',
+            path: '/home',
             element: (
                 <MainPage>
                     <HomePage />
@@ -39,7 +40,9 @@ export const RouterMain = () => {
                 </MainPage>
             )
         }
-    ])
+    ], {
+        basename: '/acap.front'
+    });
 
     return (
         <>
