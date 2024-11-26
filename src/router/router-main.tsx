@@ -17,7 +17,7 @@ export const RouterMain = () => {
             )
         },
         {
-            path: '#home',
+            path: '/home',
             element: (
                 <MainPage>
                     <HomePage />
