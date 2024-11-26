@@ -9,7 +9,15 @@ export const RouterMain = () => {
     const router = createHashRouter([
         {
             
-            path: '/*',
+            path: '/',
+            element: (
+                <MainPage>
+                    <HomePage />
+                </MainPage>
+            )
+        },
+        { 
+            path: '/acap.front',
             element: (
                 <MainPage>
                     <HomePage />
