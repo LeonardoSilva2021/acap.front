@@ -7,6 +7,7 @@ import { RouterMain } from './router/router-main';
 import { MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
 import '@mantine/carousel/styles.css';
+import { HashRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -17,7 +18,9 @@ root.render(
       <ThemeProvider
         theme={theme}
       >
-        <RouterMain />
+        <HashRouter>
+          <RouterMain />
+        </HashRouter>
       </ThemeProvider>
     </MantineProvider>
   </React.StrictMode>
