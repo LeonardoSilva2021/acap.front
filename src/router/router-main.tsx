@@ -9,7 +9,7 @@ export const RouterMain = () => {
     const router = createHashRouter([
         {
             
-            path: '/',
+            path: '#',
             element: (
                 <MainPage>
                     <HomePage />
@@ -17,7 +17,7 @@ export const RouterMain = () => {
             )
         },
         {
-            path: '/home',
+            path: '#home',
             element: (
                 <MainPage>
                     <HomePage />
